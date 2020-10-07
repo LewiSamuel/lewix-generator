@@ -1,0 +1,16 @@
+.containerLogin{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: left;
+    background-image: url("https://source.unsplash.com/800x450/?office");
+}
+
+.sideL{
+    min-height: 100vh;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

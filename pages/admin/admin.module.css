@@ -1,0 +1,24 @@
+.containerLogin{
+    min-width: 100vw;
+    min-height: 100vh;
+  background-color: whitesmoke;}
+
+.sideL{
+    min-height: 100vh;
+    display: flex;
+    padding-top: 20px;
+}
+
+.contentDoc{
+    border: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.outH1{
+    padding: 25px;
+}
+
+.outH1 h1 a{
+    float: right;
+    margin-top: 10px;
+}

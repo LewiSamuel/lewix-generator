@@ -1,0 +1,50 @@
+  .btnThemePrincipal{
+    background-color: #92ff00;
+    font-weight: bold;
+    padding: 0.9rem 2rem;
+    color: black !important;
+    border: none;
+  }
+  .btnThemePrincipal:hover{
+    background-color: black;
+    color: #92ff00 !important;
+  }
+
+  .theme-text-color-1{
+    color: #92ff00 !important;
+  }
+  .theme-bg-color-1{
+    background-color: #92ff00 !important;
+  }
+
+  .icon-post:hover{
+    color: #77ce03 !important;
+  }
+  .icon-post{
+    margin-right: 10px;
+  }
+
+  .social-buttons{
+    float: right;
+    padding: 10px;
+    color: gray;
+}
+
+.navbar, .jumbotron{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px !important;
+    background-color: #FFF !important;
+}
+
+.profilePhoto{
+  border-radius: 50px !important;
+  display: block;
+  margin-top: -8px;
+  margin-right: 12px;
+  width: 36px;
+}
+
+.spin-theme{
+  border-width: 10px;
+  width: 5rem;
+  height: 5rem;
+}

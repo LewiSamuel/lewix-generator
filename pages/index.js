@@ -1,65 +1,72 @@
-import Head from 'next/head'
+// css 
 import styles from '../styles/Home.module.css'
 
+// componetns
+import FOOTER from '../components/FOOTER';
+import NAVBAR from '../components/NAVBAR';
+import HEAD from '../components/HEAD';
+import CardVantagens from '../components/landing/card-vantagens';
+
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  return (<span>
+    
+    {/* -----------    Set Header    -------------- */}
+    <HEAD Title="Lewix Generator"/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    {/* -----------    TOP NAV    -------------- */}
+    <NAVBAR />
+    
+    {/* -----------    BANNER TOP    -------------- */}
+    <section className={" " + styles.landingHeader + " align-items-center"}>
+      <div className="col">
+        <article className={styles.HeaderContent + " text-center"}>
+          <h1>Make a promise here!</h1>
+          <p>Explain the way this will happen</p>
+          <a href="/home" className={"btn btnThemePrincipal btn-lg active"} role="button">Go it!</a>
+        </article>
+      </div>
+    </section>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+    {/* -----------    DESCRIÇÃO INICIAL     -------------- */}
+    <section className={"container text-center "+ styles.breakpoint1}>
+      <h2>
+        <b>Where can I get some?</b>
+      </h2>
+      <hr className={styles.hrSm + " theme-text-color-1"} />
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+      <img src="https://png.pngtree.com/png-vector/20200319/ourmid/pngtree-business-web-banner-concept-design-with-people-in-meeting-and-presentation-png-image_2158017.jpg" alt="variation"/>
+    </section>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    {/* -----------     VANTAGENS      -------------- */}
+    <section className={"container text-center "+ styles.breakpoint1}>
+      <h2>
+        <b>Consectetur adipiscing elit?</b>
+      </h2>
+      <hr className={styles.hrSm + " theme-text-color-1"} />
+      <div className="row">
+        <div className="col-md-12 col-lg">
+          <CardVantagens />
         </div>
-      </main>
+        <div className="col-md-12 col-lg">
+          <CardVantagens />
+        </div>
+        <div className="col-md-12 col-lg">
+          <CardVantagens />
+        </div>
+      </div>
+    </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    {/* -----------    GOOGLE MAPS    -------------- */}
+    <section className="row overflow-h">
+      <div className="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61420.49779201426!2d-47.9122146670139!3d-15.815491604140565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a7c6e43a3b1%3A0x230ab21b41856b05!2sMemorial%20JK!5e0!3m2!1spt-BR!2sbr!4v1596671738361!5m2!1spt-BR!2sbr" height="450" frameBorder="0" style={{border:0,width:"100vw"}} allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
+      </div>
+    </section>
+
+
+    <FOOTER />
+
+  </span>)
 }

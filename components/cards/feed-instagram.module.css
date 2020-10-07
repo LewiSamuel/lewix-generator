@@ -1,0 +1,23 @@
+.botComment{
+    padding: 0 !important;
+    border-top: 1px solid #f1f1f1;
+}
+
+.botComment textarea{
+    width: calc(100% - 110px);
+    resize: none;
+    border: none;
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+.botComment textarea:focus{
+    box-shadow: none !important;
+}
+
+.botComment button{
+    font-variant-caps: all-small-caps;
+    font-size: 14px;
+    color: #77ce03;
+    margin-top: 11px;
+}

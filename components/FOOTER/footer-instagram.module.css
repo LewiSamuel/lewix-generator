@@ -1,0 +1,20 @@
+.ul{
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 3px;
+    list-style: none;
+}
+
+.li{
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 16px;
+}
+
+.li a{
+    color: #01376b;
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+}
